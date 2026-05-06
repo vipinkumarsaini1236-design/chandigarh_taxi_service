@@ -1119,8 +1119,8 @@
 <!-- ===== CTA / Contact Section ===== -->
 <section class="cta" id="contact">
   <div class="container reveal">
-    <h2>Need a Ride <span>Right Now?</span></h2>
-    <p>Book your taxi instantly. Talk to our team or message us on WhatsApp — we'll be at your doorstep in minutes.</p>
+    <h2>Book a <span>Taxi in Chandigarh</span> Right Now</h2>
+    <p>Call us for instant booking — local rides, Delhi Airport transfers and outstation cabs to Delhi, Shimla, Manali, Dehradun and across India. Available 24/7.</p>
     <div class="cta-buttons">
       <a href="tel:+919501612518" class="btn btn-call btn-lg">
         <i class="fa-solid fa-phone"></i> Call +91 9501612518
@@ -1178,6 +1178,16 @@
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
     });
   });
 </script>
