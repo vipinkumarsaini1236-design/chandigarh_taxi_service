@@ -4,6 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- ===== Favicon (Browser Tab Icon) ===== -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111'/%3E%3Cpath d='M14 40 Q14 36 18 35 L22 33 Q24 28 28 27 L36 27 Q40 28 42 33 L46 35 Q50 36 50 40 L50 44 Q50 46 48 46 L16 46 Q14 46 14 44 Z' fill='%23ffc107' stroke='%23111' stroke-width='1.5'/%3E%3Cpath d='M23 35 Q25 30 28 29 L36 29 Q39 30 41 35 Z' fill='%23222'/%3E%3Crect x='26' y='22' width='12' height='6' rx='1' fill='%23111'/%3E%3Ctext x='32' y='27' text-anchor='middle' fill='%23ffc107' font-family='Arial Black' font-size='5' font-weight='900'%3ETAXI%3C/text%3E%3Ccircle cx='22' cy='46' r='5' fill='%23111'/%3E%3Ccircle cx='22' cy='46' r='2' fill='%23666'/%3E%3Ccircle cx='42' cy='46' r='5' fill='%23111'/%3E%3Ccircle cx='42' cy='46' r='2' fill='%23666'/%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111'/%3E%3Cpath d='M14 40 Q14 36 18 35 L22 33 Q24 28 28 27 L36 27 Q40 28 42 33 L46 35 Q50 36 50 40 L50 44 Q50 46 48 46 L16 46 Q14 46 14 44 Z' fill='%23ffc107'/%3E%3Crect x='26' y='22' width='12' height='6' rx='1' fill='%23111'/%3E%3Ctext x='32' y='27' text-anchor='middle' fill='%23ffc107' font-family='Arial Black' font-size='5' font-weight='900'%3ETAXI%3C/text%3E%3Ccircle cx='22' cy='46' r='5' fill='%23111'/%3E%3Ccircle cx='42' cy='46' r='5' fill='%23111'/%3E%3C/svg%3E" />
+<meta name="theme-color" content="#ffc107" />
+
 <!-- ===== Primary SEO Meta Tags ===== -->
 <title>Taxi Service in Chandigarh | Chandigarh to Delhi, Shimla, Manali & Dehradun Taxi</title>
 <meta name="description" content="Trusted taxi service in Chandigarh available 24/7. Book Chandigarh to Delhi taxi, Chandigarh to Shimla taxi, Chandigarh to Manali taxi, Chandigarh to Dehradun taxi & Delhi Airport cabs. Pan-India coverage at affordable rates." />
@@ -13,13 +18,13 @@
 <meta name="language" content="English" />
 <meta name="geo.region" content="IN-CH" />
 <meta name="geo.placename" content="Chandigarh, India" />
-<link rel="canonical" href="https://chandigarhtaxiservice.com/" />
+<link rel="canonical" href="https://bookchandigarhtaxi.com/" />
 
 <!-- ===== Open Graph (Facebook, WhatsApp) ===== -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Taxi Service in Chandigarh | Chandigarh to Delhi, Shimla, Manali & Dehradun Taxi" />
 <meta property="og:description" content="Reliable taxi service in Chandigarh with pan-India coverage. Book outstation cabs to Delhi, Shimla, Manali, Dehradun & Delhi Airport. Call +91 9501612518." />
-<meta property="og:url" content="https://chandigarhtaxiservice.com/" />
+<meta property="og:url" content="https://bookchandigarhtaxi.com/" />
 <meta property="og:site_name" content="Chandigarh Taxi Service" />
 <meta property="og:locale" content="en_IN" />
 
@@ -34,12 +39,13 @@
   "@context": "https://schema.org",
   "@type": "TaxiService",
   "name": "Chandigarh Taxi Service",
-  "image": "https://chandigarhtaxiservice.com/og-image.jpg",
-  "url": "https://chandigarhtaxiservice.com/",
+  "image": "https://bookchandigarhtaxi.com/og-image.jpg",
+  "url": "https://bookchandigarhtaxi.com/",
   "telephone": "+91-9501612518",
   "priceRange": "₹₹",
   "areaServed": [
     { "@type": "City", "name": "Chandigarh" },
+    { "@type": "City", "name": "Mohali" },
     { "@type": "City", "name": "Delhi" },
     { "@type": "City", "name": "Shimla" },
     { "@type": "City", "name": "Manali" },
@@ -97,7 +103,7 @@
       "name": "Do you offer taxi service across India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, we provide pan-India taxi service. While headquartered in Chandigarh, we serve all major Indian cities including Delhi, Mumbai, Bengaluru, Jaipur, Goa, Dehradun, Shimla and Manali."
+        "text": "Yes, we provide pan-India taxi service. While headquartered in Chandigarh, we serve major Indian cities including Delhi, Jaipur, Lucknow, Amritsar, Agra, Dehradun, Shimla and Manali."
       }
     }
   ]
@@ -580,6 +586,19 @@
     margin-bottom: 20px;
     color: var(--black);
   }
+  .taxi-illustration {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 8px 14px rgba(0,0,0,0.25));
+    animation: taxiFloat 3.5s ease-in-out infinite;
+  }
+  @keyframes taxiFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
   .about-card-inner h4 {
     font-size: 1.6rem;
     font-weight: 800;
@@ -893,23 +912,14 @@
     </div>
     <div class="cities-grid reveal">
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Chandigarh</div>
+      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Mohali</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Delhi NCR</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Mumbai</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Bengaluru</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Hyderabad</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Chennai</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Kolkata</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Pune</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Jaipur</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Ahmedabad</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Lucknow</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Amritsar</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Shimla</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Manali</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Dehradun</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Goa</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Udaipur</div>
-      <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Varanasi</div>
       <div class="city-chip"><i class="fa-solid fa-map-pin"></i> Agra</div>
       <div class="city-chip"><i class="fa-solid fa-circle-plus"></i> & Many More</div>
     </div>
@@ -1054,7 +1064,121 @@
     <div class="about-wrap">
       <div class="about-img reveal">
         <div class="about-card-inner">
-          <div class="big-icon"><i class="fa-solid fa-taxi"></i></div>
+          <svg class="taxi-illustration" viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" aria-label="Yellow taxi cab illustration">
+            <defs>
+              <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#fff176"/>
+                <stop offset="55%" stop-color="#ffd54a"/>
+                <stop offset="100%" stop-color="#f5a623"/>
+              </linearGradient>
+              <radialGradient id="windowGrad" cx="50%" cy="30%" r="80%">
+                <stop offset="0%" stop-color="#3a3a3a"/>
+                <stop offset="100%" stop-color="#0d0d0d"/>
+              </radialGradient>
+              <radialGradient id="headlight" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fffde7"/>
+                <stop offset="100%" stop-color="#ffeb3b"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Ground shadow -->
+            <ellipse cx="400" cy="320" rx="320" ry="14" fill="#000" opacity="0.25"/>
+
+            <!-- Main car body -->
+            <path d="M 70 275
+                     Q 70 250 100 240
+                     L 165 220
+                     Q 210 175 265 165
+                     L 535 165
+                     Q 590 175 635 220
+                     L 700 240
+                     Q 730 250 730 275
+                     L 730 295
+                     Q 730 305 720 305
+                     L 80 305
+                     Q 70 305 70 295 Z"
+                  fill="url(#bodyGrad)" stroke="#1a1a1a" stroke-width="2.5"/>
+
+            <!-- Windows (tinted glass) -->
+            <path d="M 215 220
+                     Q 245 180 285 175
+                     L 515 175
+                     Q 555 180 585 220
+                     Z"
+                  fill="url(#windowGrad)" stroke="#1a1a1a" stroke-width="2"/>
+
+            <!-- Window divider (B-pillar) -->
+            <line x1="400" y1="178" x2="400" y2="220" stroke="#1a1a1a" stroke-width="3"/>
+
+            <!-- Bottom window line -->
+            <line x1="215" y1="220" x2="585" y2="220" stroke="#1a1a1a" stroke-width="2.5"/>
+
+            <!-- TAXI roof sign -->
+            <rect x="345" y="135" width="110" height="34" fill="#1a1a1a" rx="5" stroke="#ffc107" stroke-width="2"/>
+            <text x="400" y="159" text-anchor="middle" fill="#ffc107" font-family="Arial Black, sans-serif" font-size="20" font-weight="900" letter-spacing="2">TAXI</text>
+
+            <!-- Checkered band along side -->
+            <g>
+              <rect x="80"  y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="108" y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="136" y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="164" y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="94"  y="268" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="122" y="268" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="150" y="268" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="640" y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="668" y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="696" y="258" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="654" y="268" width="14" height="10" fill="#1a1a1a"/>
+              <rect x="682" y="268" width="14" height="10" fill="#1a1a1a"/>
+            </g>
+
+            <!-- Door line -->
+            <line x1="400" y1="230" x2="400" y2="295" stroke="#1a1a1a" stroke-width="2"/>
+
+            <!-- Door handles -->
+            <rect x="315" y="245" width="22" height="5" fill="#1a1a1a" rx="2"/>
+            <rect x="463" y="245" width="22" height="5" fill="#1a1a1a" rx="2"/>
+
+            <!-- Headlight -->
+            <ellipse cx="710" cy="245" rx="14" ry="9" fill="url(#headlight)" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Taillight -->
+            <rect x="72" y="240" width="14" height="16" fill="#ff5252" rx="2" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Front bumper detail -->
+            <rect x="690" y="285" width="40" height="6" fill="#1a1a1a" rx="2"/>
+
+            <!-- Front wheel -->
+            <circle cx="215" cy="305" r="44" fill="#1a1a1a"/>
+            <circle cx="215" cy="305" r="32" fill="#3a3a3a"/>
+            <circle cx="215" cy="305" r="12" fill="#1a1a1a"/>
+            <g stroke="#777" stroke-width="3" stroke-linecap="round">
+              <line x1="215" y1="278" x2="215" y2="332"/>
+              <line x1="188" y1="305" x2="242" y2="305"/>
+              <line x1="195" y1="285" x2="235" y2="325"/>
+              <line x1="235" y1="285" x2="195" y2="325"/>
+            </g>
+
+            <!-- Rear wheel -->
+            <circle cx="585" cy="305" r="44" fill="#1a1a1a"/>
+            <circle cx="585" cy="305" r="32" fill="#3a3a3a"/>
+            <circle cx="585" cy="305" r="12" fill="#1a1a1a"/>
+            <g stroke="#777" stroke-width="3" stroke-linecap="round">
+              <line x1="585" y1="278" x2="585" y2="332"/>
+              <line x1="558" y1="305" x2="612" y2="305"/>
+              <line x1="565" y1="285" x2="605" y2="325"/>
+              <line x1="605" y1="285" x2="565" y2="325"/>
+            </g>
+
+            <!-- Speed lines -->
+            <g stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" opacity="0.35">
+              <line x1="20" y1="220" x2="55" y2="220"/>
+              <line x1="10" y1="245" x2="50" y2="245"/>
+              <line x1="25" y1="270" x2="55" y2="270"/>
+            </g>
+          </svg>
+
           <h4>10+ Years of Trusted Service</h4>
           <span class="tag">Pan-India Coverage</span>
           <div class="stats-row">
@@ -1106,7 +1230,7 @@
       </div>
       <div class="faq-item reveal">
         <div class="faq-q">Do you offer taxi service across India? <i class="fa-solid fa-plus"></i></div>
-        <div class="faq-a">Yes, we provide pan-India taxi service. While headquartered in Chandigarh, we serve all major Indian cities — Delhi, Mumbai, Bengaluru, Jaipur, Goa, Dehradun, Shimla, Manali and many more — with one-way drop, round-trip and multi-city tour packages.</div>
+        <div class="faq-a">Yes, we provide pan-India taxi service. While headquartered in Chandigarh, we serve major Indian cities — Delhi, Jaipur, Lucknow, Amritsar, Agra, Dehradun, Shimla, Manali and many more — with one-way drop, round-trip and multi-city tour packages.</div>
       </div>
       <div class="faq-item reveal">
         <div class="faq-q">Are your fares fixed and transparent? <i class="fa-solid fa-plus"></i></div>
