@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chandigarhtaxiservice.com/sitemap.xml
