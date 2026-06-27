@@ -1,4 +1,24 @@
+<<<<<<< HEAD
 User-agent: *
 Allow: /
 
 Sitemap: https://chandigarhtaxiservice.com/sitemap.xml
+=======
+# robots.txt for https://bookchandigarhtaxi.com/
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Block crawling of common non-public folders (if added later)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://bookchandigarhtaxi.com/sitemap.xml
+
+# Crawl-delay (optional — keeps server load gentle for aggressive bots)
+Crawl-delay: 1
+>>>>>>> 0f3aa62ca1acdf039dfa729434d9fd1e4c00701e
